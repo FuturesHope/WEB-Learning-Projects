@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family:  -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”,
+    “Droid Sans”, “Helvetica Neue”, sans-serif; 
+/*     'Rubik', sans-serif; */
+/*   background-image: url("https://cdn.pixabay.com/photo/2013/02/05/19/16/swimming-78112_960_720.jpghttps://cdn.pixabay.com/photo/2013/02/05/19/16/swimming-78112_960_720.jpg"); */
+}
+
+form {
+  color: white;
+}
+
+.header {
+  padding:  0.625rem;
+/*   margin-bottom: 1.85rem; */
+  color:white;
+  margin-top: 1em;
+}
+
+.form-group {
+/*   margin: 0 auto 1.25rem auto; */
+
+}
+#user-rating-form {
+    display:flex;
+  flex-direction: column;
+/*   margin: 9.9em; */
+/*   border: 2px solid black; */
+}
+#user-rating-form label {
+/*   padding:0px; */
+/*   border: 2px solid black; */
+  margin: 0px;
+}
+/* .recommend{
+  display:block;
+} */
+
+.input-radio,
+.input-checkbox {
+/*   display: inline-block; */
+/*   flex-direction: column; */
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+label {
+/*   display: flex;
+  align-items: center; */
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  
+}
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 158, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.pixabay.com/photo/2015/09/02/12/34/woman-918532_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+form p {
+  font-size: 1.25em;
+  margin-bottom: 0;
+}
+form label {
+  margin-bottom: 0; 
+}
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+}

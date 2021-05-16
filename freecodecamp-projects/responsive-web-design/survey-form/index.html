@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Mega Pool Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container"> 
+<!--     HEADER -->
+  <header class="header">
+  <h1 id="title" class="text-center">Mega Pool Survey Form</h1>
+  <p id="description" class="text-center">We encourage our costumers to leave feedback on the quality of our services</p>
+  </header>
+  
+
+
+    
+<!--     FORM -->
+  <form action="" id="survey-form" class="was-validated">
+    <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input 
+               type="text"
+             required
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name please"
+             >
+    </div>
+    
+    <div class="form-group">
+      <label for="email" id="email-label">Email</label>
+      <input 
+             type="email"
+             id="email"
+             name="email"
+             placeholder="Enter your email please"
+             class="form-control"
+             required>
+    </div>
+   
+    
+<!--     phone -->
+    <div class="form-group">
+      <label for="phone" id="phone-label">Phone number (optional)</label>
+      <input 
+             type="tel"
+             optional
+             name="phone"
+             id="phone"
+             class="form-control"
+             pattern="[0-9]{10}" 
+             placeholder="(0) (xxx) (xxx) (xxx)"
+             >
+    </div>
+    
+<!--      [0-9]{3}-[0-9]{3}-[0-9]{3} -->
+
+<!--     Number -->
+       <div class="form-group">
+      <label id="number-label" for="number"
+        >Please rate the quality of Mega Pool Services</label
+      >
+      <input
+        type="number"
+        name="rating"
+        id="number"
+        min="1"
+        max="10"
+        class="form-control"
+        placeholder="From 1 to 10"
+             value="0"
+      />
+    </div>
+    
+<!--     select -->
+    <div class="form-group">
+      <label for="dropdown" id="dropdown-label">How often do you use our services?</label>
+      <select 
+              id="dropdown"
+              name="user-type"
+              class="form-control"
+              required
+              >
+        <option value="" disabled selected>Select your option</option>
+        <option value="regular-user" >Regular User</option>
+        <option value="seldom-user">Seldom User </option>
+        <option value="first-time-user">First Time User</option>
+      </select>
+    </div>
+    
+<!--     Range recommend -->
+    <div class="form-group">
+      <label for="number">How likely are you to recommend Mega Pool to your friends?</label>
+      <br>
+        1 <input 
+                 id="number"
+                 name="user-recommend"
+                 type="range"
+                 min="1"
+                 max="10"
+                 value="10">
+        10
+    </div>
+<!-- Radio boxes service quality    -->
+    
+    
+<div class="form-group" id="user-rating-form">
+      <p>Please rate the quality of Mega Pool Services</p>
+      
+      <label>
+        <input
+          name="user-rate"
+          value="good"
+          type="radio"  
+          class="input-radio"
+          checked
+        />Good</label
+      >
+      <label>
+        <input
+          name="user-rate"
+          value="medium"
+          type="radio"
+          class="input-radio"
+        />Medium</label
+      >
+      <label
+        ><input
+          name="user-rate"
+          value="low"
+          type="radio"
+          class="input-radio"
+        />Low</label
+      >
+    </div>
+    
+    
+    
+    
+    
+    
+<!--     Checkboxes -->
+<div class="form-group checkboxes">
+      <p>
+        What would you like us to improve?
+        <span class="clue">(Multiple choice)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer-to-improve"
+          value="main-pool"
+          type="checkbox"
+          class="input-checkbox"
+        />Main Pool</label
+      >
+      <label>
+        <input
+          name="prefer-to-improve"
+          value="kids-area"
+          type="checkbox"
+          class="input-checkbox"
+        />Kids Area</label
+      >
+      <label
+        ><input
+          name="prefer-to-improve"
+          value="group-exercises"
+          type="checkbox"
+          class="input-checkbox"
+        />Group Exercises</label
+      >
+      <label
+        ><input
+          name="prefer-to-improve"
+          value="personal-training"
+          type="checkbox"
+          class="input-checkbox"
+        />Personal Training</label
+      >
+      <label
+        ><input
+          name="prefer-to-improve"
+          value="staff"
+          type="checkbox"
+          class="input-checkbox"
+        />Staff</label
+      >
+      <label
+        ><input
+          name="prefer-to-improve"
+          value="equipment"
+          type="checkbox"
+          class="input-checkbox"
+        />Equipment</label
+      >
+      <label
+        ><input
+          name="prefer-to-improve"
+          value="geolocation"
+          type="checkbox"
+          class="input-checkbox"
+        />Geolocation and ease of reach</label
+      >
+      <label
+        ><input
+          name="prefer-to-improve"
+          value="pool-water-quality"
+          type="checkbox"
+          class="input-checkbox"
+        />Pool water quality</label
+      >
+      <label
+        ><input
+          name="prefer-to-improve"
+          value="the-bar"
+          type="checkbox"
+          class="input-checkbox"
+        />The pool bar</label
+      >
+      <label
+        ><input
+          name="prefer-to-improve"
+          value="the-website"
+          type="checkbox"
+          class="input-checkbox"
+        />Official Web Site</label
+      >
+    </div>
+    
+     <div class="form-group">
+  <label for="comment">Please leave your comments if you wish:</label>
+  <textarea 
+            class="form-control"
+            rows="5"
+            id="comment"
+            name="comment">
+  </textarea>
+</div> 
+    <div class="form-group submit-area">
+      <button type="submit"
+              class="form-control submit-button"
+              id="submit">
+        Submit
+      </button>
+    </div>
+    
+  </form>
+  </div>
+  
+<!--   BOOTSTRAP COMPONENTS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+</html>
